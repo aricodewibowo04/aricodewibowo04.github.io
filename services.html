@@ -1,88 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Kalashua</title>
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon.ico" />
-    <!-- link style -->
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/services.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Kalashua</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon.ico" />
+  <!-- link style -->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/services.css" />
 </head>
+
 <body>
-
-
-
-    <!-- ================ header=============== -->
-    <header>
-        <nav class="navbar">
-            <div class="navbar_logo">
-                <img src="/assets/img/kalashuaLogo.png" alt="logo kalashua" />
+  <!-- ================ header=============== -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar_logo">
+        <img src="/assets/img/kalashuaLogo.png" alt="logo kalashua" />
+      </div>
+      <div class="navbar_nav" id="navbar-nav">
+        <ul class="navbar_item">
+          <li><a href="/index.html" class="navbar_link">Home</a></li>
+          <li><a href="/services.html" class="navbar_link">Services</a></li>
+          <li><a href="#package" class="navbar_link">Package</a></li>
+          <li><a href="#gallery" class="navbar_link">Gallery</a></li>
+          <li><a href="#contact" class="navbar_link">Contact</a></li>
+          <li><a href="#about" class="navbar_link">About</a></li>
+        </ul>
+      </div>
+      <div class="navbar_sidebar" id="navbar-nav">
+        <ul class="navbar_item">
+          <li><a href="/index.html" class="navbar_link">Home</a></li>
+          <li><a href="/services.html" class="navbar_link">Services</a></li>
+          <li><a href="#package" class="navbar_link">Package</a></li>
+          <li><a href="#gallery" class="navbar_link">Gallery</a></li>
+          <li><a href="#contact" class="navbar_link">Contact</a></li>
+          <li><a href="#about" class="navbar_link">About</a></li>
+        </ul>
+      </div>
+      <div class="navbar_nav_extra" id="navbar-extra">
+        <ul>
+          <li>
+            <a href="#" class="navbar_extra_link"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#" class="navbar_extra_link"><i class="fa fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar_toggler">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="services_page">
+      <div class="container">
+        <img src="/assets/img/about1.jpg" alt="hero" width="100%">
+        <div class="text_block">
+          <h4>Our Services</h4>
+          <p><a href="#">Home</a> > <a href="#">Our Services</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <!-- open trip -->
+          <div class="content">
+            <div class="heading_content">
+              <h2>Open Trip</h2>
             </div>
-            <div class="navbar_nav" id="navbar-nav">
-                <ul class="navbar_item">
-                    <li><a href="/index.html" class="navbar_link">Home</a></li>
-                    <li><a href="/services.html" class="navbar_link">Services</a></li>
-                    <li><a href="#package" class="navbar_link">Package</a></li>
-                    <li><a href="#gallery" class="navbar_link">Gallery</a></li>
-                    <li><a href="#contact" class="navbar_link">Contact</a></li>
-                    <li><a href="#about" class="navbar_link">About</a></li>
-                </ul>
-            </div>
-            <div class="navbar_sidebar" id="navbar-nav">
-                <ul class="navbar_item">
-                    <li><a href="/index.html" class="navbar_link">Home</a></li>
-                    <li><a href="/services.html" class="navbar_link">Services</a></li>
-                    <li><a href="#package" class="navbar_link">Package</a></li>
-                    <li><a href="#gallery" class="navbar_link">Gallery</a></li>
-                    <li><a href="#contact" class="navbar_link">Contact</a></li>
-                    <li><a href="#about" class="navbar_link">About</a></li>
-                </ul>
-            </div>
-            <div class="navbar_nav_extra" id="navbar-extra">
-                <ul>
+            <div class="main_content">
+              <div class="tab">
+                <button class="tab_links" onclick="openPage(event, 'info')" id="defaultOpen">
+                  <i class="fa fa-info"></i>
+                  Info
+                </button>
+                <button class="tab_links" onclick="openPage(event, 'flight')">
+                  <i class="fa fa-plane"></i>
+                  Flight
+                </button>
+                <button class="tab_links" onclick="openPage(event, 'Schedule')">
+                  <i class="fa fa-calendar"></i>
+                  Schedule
+                </button>
+                <button class="tab_links" onclick="openPage(event, 'price')">
+                  <i class="fa fa-dollar"></i>
+                  Price
+                </button>
+              </div>
+
+              <div class="tab_content" id="info">
+                <h3>Trip <span>Information</span></h3>
+                <p>Open Trip is where a random group of people go on a vacation (trip) together even though
+                  they might not know each other yet within the group.
+                </p>
+                <p>
+                  The main benefit is of course the
+                  cost will be lower (because it is shared) compared to a private trip or when you go on a trip
+                  by yourself.
+                </p>
+              </div>
+              <div class="tab_content" id="flight">
+                <h3>Flight <span> Information</span></h3>
+                <h5>Departure</h5>
+                <p>Choose a flight ticket that arrives before
+                  11.00 am on a Friday or buy a D-1 before
+                  the trip & after trip you can choose
+                  flight ticket on sunday at 13.00+ pm or
+                  D+1 after trip.
+                </p>
+              </div>
+              <div class="tab_content" id="Schedule">
+                <h3>Schedule <span>Open Trip</span></h3>
+                <p>Every Weekend Friday - Sunday
+                  1 Pax can go! Guaranteed departure!
+                  Start trip 10.00 - 11.00
+                  End trip 12.30 - 13.00
+                  Meeting Point Waterfront, Labuan Bajo.
+                </p>
+              </div>
+              <div class="tab_content" id="price">
+                <div class="include">
+                  <h3>Price <span>Include</span></h3>
+                  <ul>
                     <li>
-                        <a href="#" class="navbar_extra_link"><i class="fa fa-instagram"></i></a>
+                      Transformation Airport - Hotel/Meeting point
                     </li>
                     <li>
-                        <a href="#" class="navbar_extra_link"><i class="fa fa-youtube"></i></a>
+                      All meals during trip. (Breakfast, Lunch, Dinner)
                     </li>
-                </ul>
-            </div>
-            <div class="navbar_toggler">
-                <i class="fa fa-bars"></i>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="service_page">
-            <div class="container">
-                <div class="hero_img">
-                    <img src="/assets/img/sandip-roy-SD-lWhQXKWY-unsplash.jpg" alt="hero services">
+                    <li>
+                      Snorkeling Set (Mask & Snorkel)
+                    </li>
+                    <li>
+                      Local Guide / Tour Guide
+                    </li>
+                    <li>
+                      Unlimited mineral water, coffes & tea
+                    </li>
+                    <li>
+                      Whole boat & facilities
+                    </li>
+                    <li>
+                      Life jacket & basic first aid on board
+                    </li>
+                    <li>
+                      Afternoon snack & juices
+                    </li>
+                    <li>Documentation set & Drone</li>
+                  </ul>
                 </div>
-                <div class="hero_title">
-                    <h1>Our Services</h1>
+                <div class="exclude">
+                  <h3>Price <span>Exclude</span></h3>
+                  <ul>
+                    <li>
+                      Hotel before and after the trip.
+                    </li>
+                    <li>
+                      Transfortation from hometown to Labuan Bajo (Return)
+                    </li>
+                    <li>
+                      Tipping Tour Guide / Boat Crew
+                    </li>
+                    <li>
+                      Personal Expanses
+                    </li>
+                    <br>
+                    <li>
+                      Komodo National Park fee
+                      <ul>
+                        <li><span>Local :</span> IDR 220.000</li>
+                        <li><span>foreigner :</span> IDR 650.000</li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
-        </section>
-    </main>
+            <div class="footer_content">
+              <!-- footer_content -->
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <!-- private trip -->
+          <div class="content">
+            <div class="heading_content">
+              <h2>Private Trip</h2>
+            </div>
+            <div class="main_content">
+              <div class="tab">
+                <button class="tab_linksP" onclick="openPageP(event, 'infoP')" id="defaultOpenP">
+                  <i class="fa fa-info"></i>
+                  Info
+                </button>
+                <button class="tab_linksP" onclick="openPageP(event, 'flightP')">
+                  <i class="fa fa-plane"></i>
+                  Flight
+                </button>
+                <button class="tab_linksP" onclick="openPageP(event, 'ScheduleP')">
+                  <i class="fa fa-calendar"></i>
+                  Schedule
+                </button>
+                <button class="tab_linksP" onclick="openPageP(event, 'priceP')">
+                  <i class="fa fa-dollar"></i>
+                  Price
+                </button>
+              </div>
 
+              <div class="tab_contentP" id="infoP">
+                <h3>Trip <span>Information</span></h3>
+                <p>
+                  A private or custom tour is one where the tour is run exclusively for you. Whether you
+want a honeymoon for you and yor spouse, quality time with your family, a few fun days
+with business partners or anything between we are here to plan it for you.
+                </p>
+                <p>
+                  You get to
+choose every aspect of your holiday, and our team of experts will arrange every element
+for you, taking the stress out of planning, leaving you to focus on having the trip of a
+lifetime.
 
+                </p>
+              </div>
+              <div class="tab_contentP" id="flightP">
+                <h3>Flight <span> Information</span></h3>
+                <h5>Departure</h5>
+                <p>Choose a flight ticket that arrives before
+                  11.00 am on a Friday or buy a D-1 before
+                  the trip & after trip you can choose
+                  flight ticket on sunday at 13.00+ pm or
+                  D+1 after trip.
+                </p>
+              </div>
+              <div class="tab_contentP" id="ScheduleP">
+                <h3>Schedule <span>Open Trip</span></h3>
+                <p>Anytime
+                </p>
+              </div>
+              <div class="tab_contentP" id="priceP">
+                <div class="include">
+                  <h3>Price <span>Include</span></h3>
+                  <ul>
+                    <li>
+                      Transformation Airport - Hotel/Meeting point
+                    </li>
+                    <li>
+                      All meals during trip. (Breakfast, Lunch, Dinner)
+                    </li>
+                    <li>
+                      Snorkeling Set (Mask & Snorkel)
+                    </li>
+                    <li>
+                      Local Guide / Tour Guide
+                    </li>
+                    <li>
+                      Unlimited mineral water, coffes & tea
+                    </li>
+                    <li>
+                      Whole boat & facilities
+                    </li>
+                    <li>
+                      Life jacket & basic first aid on board
+                    </li>
+                    <li>
+                      Afternoon snack & juices
+                    </li>
+                    <li>Documentation set & Drone</li>
+                  </ul>
+                </div>
+                <div class="exclude">
+                  <h3>Price <span>Exclude</span></h3>
+                  <ul>
+                    <li>
+                      Hotel before and after the trip.
+                    </li>
+                    <li>
+                      Transfortation from hometown to Labuan Bajo (Return)
+                    </li>
+                    <li>
+                      Tipping Tour Guide / Boat Crew
+                    </li>
+                    <li>
+                      Personal Expanses
+                    </li>
+                    <br>
+                    <li>
+                      Komodo National Park fee
+                      <ul>
+                        <li><span>Local :</span> IDR 220.000</li>
+                        <li><span>foreigner :</span> IDR 650.000</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer_content">
+              <!-- footer_content -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="open_trip">
 
-    <!-- button top -->
+      </div>
+    </section>
+  </main>
 
-    <button onclick="topFunction()" id="btn-top">
-        <i class="fa fa-circle-up"></i>
-    </button>
+  <!-- button top -->
 
-    <!-- gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-    <!-- =================script icon====================== -->
-    <script src="https://kit.fontawesome.com/883ee8dc91.js" crossorigin="anonymous"></script>
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/animate.js"></script>
+  <button onclick="topFunction()" id="btn-top">
+    <i class="fa fa-circle-up"></i>
+  </button>
+
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+  <!-- =================script icon====================== -->
+  <script src="https://kit.fontawesome.com/883ee8dc91.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/animate.js"></script>
+  <script src="/assets/js/services.js"></script>
 </body>
+
 </html>

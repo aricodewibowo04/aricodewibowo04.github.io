@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    color: #fff;
+    height: 2000px;
 }
 
 .services_page {
@@ -7,3 +8,161 @@ body {
     position: relative;
 }
 
+.services_page .container {
+    position: relative;
+}
+
+.services_page .container .text_block {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background-color: #3c3333;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services_page .container .text_block h4 {
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+.services_page .container .text_block p a {
+    color: #f37b11;
+    font-size: 1.4rem;
+    letter-spacing:1px;
+}
+
+.content {
+    position:relative;
+    background-color: #adb3b7;
+    padding:3% ;
+    margin-top: -6px;
+    color: #3c3333;
+}
+
+.content .heading_content {
+    margin-bottom: 15px;
+}
+
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none !important;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: .3s;
+}
+
+.tab button:hover {
+    background-color: #ccc;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tab_content {
+    padding: 16px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+
+    animation: fadeEffect 1s;
+}
+
+
+.tab_content h3 {
+    color: #f37b11;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.tab_content h3 span {
+    color: #3c3333;
+}
+
+.tab_content ul {
+    padding-left: 15px;
+}
+
+.tab_content ul li {
+    list-style:circle ;
+}
+
+.tab_content ul li ul li {
+    list-style: disc;
+}
+
+.tab_contentP {
+    padding: 16px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+
+    animation: fadeEffect 1s;
+}
+
+.tab_contentP h3 {
+    color: #f37b11;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.tab_contentP ul {
+    padding-left: 15px;
+}
+
+.tab_contentP ul li {
+    list-style: circle;
+}
+
+.tab_contentP ul li ul li {
+    list-style: disc;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media(max-width: 992px) {
+}
+@media(max-width: 576px) {
+    html {
+        font-size: 80%;
+    }
+}
+@media(max-width: 415px) {
+    html {
+        font-size: 80%;
+    }
+
+
+    /*services*/
+
+    .services_page .container .text_block {
+        bottom:10px;
+    }
+
+    .services_page .container .text_block h4 {
+        display: none;
+    }
+
+    .services_page .container .text_block p {
+        font-size: 1.2rem;
+    }
+
+}
