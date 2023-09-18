@@ -52,7 +52,7 @@ body {
 
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: none;
     background-color: #f1f1f1;
 }
 
@@ -70,9 +70,12 @@ body {
     background-color: #ccc;
 }
 
+/* info section */
+
 .tab button.active {
     background-color: #ccc;
 }
+
 
 .tab_content {
     padding: 16px 12px;
