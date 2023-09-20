@@ -57,10 +57,13 @@
   <main>
     <section class="services_page">
       <div class="container">
-        <img src="/assets/img/about1.jpg" alt="hero" width="100%">
+        <img src="/assets/img/about1.jpg" alt="hero" width="100%" />
         <div class="text_block">
           <h4>Our Services</h4>
-          <p><a href="/index.html">Home</a> > <a href="/services.html">Our Services</a></p>
+          <p>
+            <a href="/index.html">Home</a> >
+            <a href="/services.html">Our Services</a>
+          </p>
         </div>
       </div>
       <div class="row">
@@ -70,111 +73,97 @@
             <div class="heading_content">
               <h2>Open Trip</h2>
             </div>
-            <div class="main_content">
-              <div class="tab">
-                <button class="tab_links info" onclick="openPage(event, 'info')" id="defaultOpen">
-                  <i class="fa fa-info"></i>
-                  Info
-                </button>
-                <button class="tab_links flight" onclick="openPage(event, 'flight')">
-                  <i class="fa fa-plane"></i>
-                  Flight
-                </button>
-                <button class="tab_links schedule" onclick="openPage(event, 'Schedule')">
-                  <i class="fa fa-calendar"></i>
-                  Schedule
-                </button>
-                <button class="tab_links price" onclick="openPage(event, 'price')">
-                  <i class="fa fa-dollar"></i>
-                  Price
-                </button>
-              </div>
 
-              <div class="tab_content" id="info">
-                <h3>Trip <span>Information</span></h3>
-                <p>Open Trip is where a random group of people go on a vacation (trip) together even though
-                  they might not know each other yet within the group.
-                </p>
-                <p>
-                  The main benefit is of course the
-                  cost will be lower (because it is shared) compared to a private trip or when you go on a trip
-                  by yourself.
-                </p>
-              </div>
-              <div class="tab_content" id="flight">
-                <h3>Flight <span> Information</span></h3>
-                <h5>Departure</h5>
-                <p>Choose a flight ticket that arrives before
-                  11.00 am on a Friday or buy a D-1 before
-                  the trip & after trip you can choose
-                  flight ticket on sunday at 13.00+ pm or
-                  D+1 after trip.
-                </p>
-              </div>
-              <div class="tab_content" id="Schedule">
-                <h3>Schedule <span>Open Trip</span></h3>
-                <p>Every Weekend Friday - Sunday
-                  1 Pax can go! Guaranteed departure!
-                  Start trip 10.00 - 11.00
-                  End trip 12.30 - 13.00
-                  Meeting Point Waterfront, Labuan Bajo.
-                </p>
-              </div>
-              <div class="tab_content" id="price">
-                <div class="include">
-                  <h3>Price <span>Include</span></h3>
-                  <ul>
-                    <li>
-                      Transformation Airport - Hotel/Meeting point
-                    </li>
-                    <li>
-                      All meals during trip. (Breakfast, Lunch, Dinner)
-                    </li>
-                    <li>
-                      Snorkeling Set (Mask & Snorkel)
-                    </li>
-                    <li>
-                      Local Guide / Tour Guide
-                    </li>
-                    <li>
-                      Unlimited mineral water, coffes & tea
-                    </li>
-                    <li>
-                      Whole boat & facilities
-                    </li>
-                    <li>
-                      Life jacket & basic first aid on board
-                    </li>
-                    <li>
-                      Afternoon snack & juices
-                    </li>
-                    <li>Documentation set & Drone</li>
-                  </ul>
+            <!-- ============= -->
+            <!-- full tabs -->
+            <!-- ============= -->
+            <div class="wrapper">
+              <button class="tab_linkO" onclick="openPageOTrip('infoO', this, '#f37b11')" id="openDefaultO"><i class="fa fa-info-circle"></i> Info</button>
+              <button class="tab_linkO" onclick="openPageOTrip('flightO', this, '#f3ef11')"><i class="fa fa-plane"></i> Flight</button>
+              <button class="tab_linkO" onclick="openPageOTrip('scheduleO', this, '#11f3b7')"><i class="fa fa-calendar"></i> Schedule</button>
+              <button class="tab_linkO" onclick="openPageOTrip('priceO', this, '#11a8f3')"><i class="fa fa-dollar"></i> Price</button>
+            </div>
+
+              <div class="tab_contentO" id="infoO">
+                <div class="desc_content">
+                  <div class="desc">
+                    <h3>Trip <span>Information</span></h3>
+                    <p>
+                      Open Trip is where a random group of people go on a vacation
+                      (trip) together even though they might not know each other
+                      yet within the group.
+                    </p>
+                    <p>
+                      The main benefit is of course the cost will be lower
+                      (because it is shared) compared to a private trip or when
+                      you go on a trip by yourself.
+                    </p>
+                  </div>
                 </div>
-                <div class="exclude">
-                  <h3>Price <span>Exclude</span></h3>
-                  <ul>
-                    <li>
-                      Hotel before and after the trip.
-                    </li>
-                    <li>
-                      Transfortation from hometown to Labuan Bajo (Return)
-                    </li>
-                    <li>
-                      Tipping Tour Guide / Boat Crew
-                    </li>
-                    <li>
-                      Personal Expanses
-                    </li>
-                    <br>
-                    <li>
-                      Komodo National Park fee
-                      <ul>
-                        <li><span>Local :</span> IDR 220.000</li>
-                        <li><span>foreigner :</span> IDR 650.000</li>
+              </div>
+              <div class="tab_contentO" id="flightO">
+                <div class="desc_content">
+                  <div class="desc">
+                    <h3>Flight <span> Information</span></h3>
+                    <h5>Departure</h5>
+                    <p>
+                      Choose a flight ticket that arrives before 11.00 am on a
+                      Friday or buy a D-1 before the trip & after trip you can
+                      choose flight ticket on sunday at 13.00+ pm or D+1 after
+                      trip.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab_contentO" id="scheduleO">
+                <div class="desc_content">
+                  <div class="desc">
+                    <h3>Schedule <span>Open Trip</span></h3>
+                    <p>
+                      Every Weekend Friday - Sunday 1 Pax can go! Guaranteed
+                      departure! Start trip 10.00 - 11.00 End trip 12.30 - 13.00
+                      Meeting Point Waterfront, Labuan Bajo.
+                    </p>
+                  </div>
+                </div>
+                </div>
+              <div class="tab_contentO" id="priceO">
+                <div class="desc_content">
+                  <div class="desc">
+                    <div class="include">
+                    <h3>Price <span>Include</span></h3>
+                    <ul>
+                      <li>Transformation Airport - Hotel/Meeting point</li>
+                        <li>All meals during trip. (Breakfast, Lunch, Dinner)</li>
+                        <li>Snorkeling Set (Mask & Snorkel)</li>
+                        <li>Local Guide / Tour Guide</li>
+                        <li>Unlimited mineral water, coffes & tea</li>
+                        <li>Whole boat & facilities</li>
+                        <li>Life jacket & basic first aid on board</li>
+                        <li>Afternoon snack & juices</li>
+                        <li>Documentation set & Drone</li>
                       </ul>
-                    </li>
-                  </ul>
+                    </div>
+                    <div class="exclude">
+                      <h3>Price <span>Exclude</span></h3>
+                      <ul>
+                        <li>Hotel before and after the trip.</li>
+                        <li>
+                          Transfortation from hometown to Labuan Bajo (Return)
+                        </li>
+                        <li>Tipping Tour Guide / Boat Crew</li>
+                        <li>Personal Expanses</li>
+                        <br />
+                        <li>
+                          Komodo National Park fee
+                          <ul>
+                            <li><span>Local :</span> IDR 220.000</li>
+                            <li><span>foreigner :</span> IDR 650.000</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -183,6 +172,9 @@
             </div>
           </div>
         </div>
+
+
+
         <div class="col">
           <!-- private trip -->
           <div class="content">
@@ -190,110 +182,91 @@
               <h2>Private Trip</h2>
             </div>
             <div class="main_content">
-              <div class="tab">
-                <button class="tab_linksP" onclick="openPageP(event, 'infoP')" id="defaultOpenP">
-                  <i class="fa fa-info"></i>
-                  Info
-                </button>
-                <button class="tab_linksP" onclick="openPageP(event, 'flightP')">
-                  <i class="fa fa-plane"></i>
-                  Flight
-                </button>
-                <button class="tab_linksP" onclick="openPageP(event, 'ScheduleP')">
-                  <i class="fa fa-calendar"></i>
-                  Schedule
-                </button>
-                <button class="tab_linksP" onclick="openPageP(event, 'priceP')">
-                  <i class="fa fa-dollar"></i>
-                  Price
-                </button>
+              <div class="wrapper">
+                <button class="tab_linkP" onclick="openPagePTrip('infoP', this, '#f37b11')" id="openDefaultP"><i class="fa fa-info-circle"></i> Info</button>
+                <button class="tab_linkP" onclick="openPagePTrip('flightP', this, '#f3ef11')"><i class="fa fa-plane"></i> Flight</button>
+                <button class="tab_linkP" onclick="openPagePTrip('scheduleP', this, '#11f3b7')"><i class="fa fa-calendar"></i> Schedule</button>
+                <button class="tab_linkP" onclick="openPagePTrip('priceP', this, '#11a8f3')"><i class="fa fa-dollar"></i> Price</button>
               </div>
 
               <div class="tab_contentP" id="infoP">
-                <h3>Trip <span>Information</span></h3>
-                <p>
-                  A private or custom tour is one where the tour is run exclusively for you. Whether you
-want a honeymoon for you and yor spouse, quality time with your family, a few fun days
-with business partners or anything between we are here to plan it for you.
-                </p>
-                <p>
-                  You get to
-choose every aspect of your holiday, and our team of experts will arrange every element
-for you, taking the stress out of planning, leaving you to focus on having the trip of a
-lifetime.
-
-                </p>
+                <div class="desc_content">
+                  <div class="desc">
+                    <h3>Trip <span>Information</span></h3>
+                    <p>
+                      Open Trip is where a random group of people go on a vacation
+                      (trip) together even though they might not know each other
+                      yet within the group.
+                    </p>
+                    <p>
+                      The main benefit is of course the cost will be lower
+                      (because it is shared) compared to a private trip or when
+                      you go on a trip by yourself.
+                    </p>
+                  </div>
+                </div>
               </div>
               <div class="tab_contentP" id="flightP">
-                <h3>Flight <span> Information</span></h3>
-                <h5>Departure</h5>
-                <p>Choose a flight ticket that arrives before
-                  11.00 am on a Friday or buy a D-1 before
-                  the trip & after trip you can choose
-                  flight ticket on sunday at 13.00+ pm or
-                  D+1 after trip.
-                </p>
+                <div class="desc_content">
+                  <div class="desc">
+                    <h3>Flight <span> Information</span></h3>
+                    <h5>Departure</h5>
+                    <p>
+                      Choose a flight ticket that arrives before 11.00 am on a
+                      Friday or buy a D-1 before the trip & after trip you can
+                      choose flight ticket on sunday at 13.00+ pm or D+1 after
+                      trip.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="tab_contentP" id="ScheduleP">
-                <h3>Schedule <span>Open Trip</span></h3>
-                <p>Anytime
-                </p>
+              <div class="tab_contentP" id="scheduleP">
+                <div class="desc_content">
+                  <div class="desc">
+                    <h3>Schedule <span>Open Trip</span></h3>
+                    <p>
+                      Anytime!
+                    </p>
+                  </div>
+                </div>
               </div>
               <div class="tab_contentP" id="priceP">
-                <div class="include">
-                  <h3>Price <span>Include</span></h3>
-                  <ul>
-                    <li>
-                      Transformation Airport - Hotel/Meeting point
-                    </li>
-                    <li>
-                      All meals during trip. (Breakfast, Lunch, Dinner)
-                    </li>
-                    <li>
-                      Snorkeling Set (Mask & Snorkel)
-                    </li>
-                    <li>
-                      Local Guide / Tour Guide
-                    </li>
-                    <li>
-                      Unlimited mineral water, coffes & tea
-                    </li>
-                    <li>
-                      Whole boat & facilities
-                    </li>
-                    <li>
-                      Life jacket & basic first aid on board
-                    </li>
-                    <li>
-                      Afternoon snack & juices
-                    </li>
-                    <li>Documentation set & Drone</li>
-                  </ul>
-                </div>
-                <div class="exclude">
-                  <h3>Price <span>Exclude</span></h3>
-                  <ul>
-                    <li>
-                      Hotel before and after the trip.
-                    </li>
-                    <li>
-                      Transfortation from hometown to Labuan Bajo (Return)
-                    </li>
-                    <li>
-                      Tipping Tour Guide / Boat Crew
-                    </li>
-                    <li>
-                      Personal Expanses
-                    </li>
-                    <br>
-                    <li>
-                      Komodo National Park fee
+                <div class="desc_content">
+                  <div class="desc">
+                    <div class="include">
+                      <h3>Price <span>Include</span></h3>
                       <ul>
-                        <li><span>Local :</span> IDR 220.000</li>
-                        <li><span>foreigner :</span> IDR 650.000</li>
+                        <li>Transformation Airport - Hotel/Meeting point</li>
+                        <li>All meals during trip. (Breakfast, Lunch, Dinner)</li>
+                        <li>Snorkeling Set (Mask & Snorkel)</li>
+                        <li>Local Guide / Tour Guide</li>
+                        <li>Unlimited mineral water, coffes & tea</li>
+                        <li>Whole boat & facilities</li>
+                        <li>Life jacket & basic first aid on board</li>
+                        <li>Afternoon snack & juices</li>
+                        <li>Documentation set & Drone</li>
                       </ul>
-                    </li>
-                  </ul>
+                    </div>
+                    <div class="exclude">
+                      <h3>Price <span>Exclude</span></h3>
+                      <ul>
+                        <li>Hotel before and after the trip.</li>
+                        <li>
+                          Transfortation from hometown to Labuan Bajo (Return)
+                        </li>
+                        <li>Tipping Tour Guide / Boat Crew</li>
+                        <li>Personal Expanses</li>
+                        <br />
+                        <li>
+                          Komodo National Park fee
+                          <ul>
+                            <li><span>Local :</span> IDR 220.000</li>
+                            <li><span>foreigner :</span> IDR 650.000</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -303,10 +276,11 @@ lifetime.
           </div>
         </div>
       </div>
-      <div class="open_trip">
-
-      </div>
+      <div class="open_trip"></div>
     </section>
+    <footer>
+      <p>www.kalashua.com - 2023</p>
+    </footer>
   </main>
 
   <!-- button top -->

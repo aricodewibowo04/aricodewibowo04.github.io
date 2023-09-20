@@ -1,38 +1,49 @@
-function openPage(evt, information) {
-    var i, tabContent, tabLinks;
-    tabContent = document.getElementsByClassName('tab_content');
-    for(i=0; i < tabContent.length;i++) {
+// OPEN TRIP
+
+function openPageOTrip(pageName, element, color) {
+    // hide all elements with class tab_content by default
+    var i , tabContent, tabLinks;
+    tabContent = document.getElementsByClassName("tab_contentO");
+    for(i = 0; i < tabContent.length; i++) {
         tabContent[i].style.display = "none";
     }
 
-    tabLinks = document.getElementsByClassName('tab_links');
-    for(i=0; i < tabLinks.length; i++) {
-        tabLinks[i].className = tabLinks[i].className.replace("active", "");
+    // remove the background-color of all tab_links button
+    tabLinks = document.getElementsByClassName("tab_linkO");
+    for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].style.backgroundColor = "";
     }
 
-    document.getElementById(information).style.display = "block";
-    evt.currentTarget.className += " active";
+    // show the specific content
+    document.getElementById(pageName).style.display = "block";
+
+    // add the specific color to the button used to open the tab content
+    element.style.backgroundColor = color;
 }
 
-function openPageP(eve, infoP) {
-    var j, tabContentP, tabLinksP ;
-    tabContentP = document.getElementsByClassName('tab_contentP');
-    for(j=0; j<tabContentP.length; j++) {
-        tabContentP[j].style.display="none";
+// PRIVATE TRIP
+
+function openPagePTrip(pageName, element, color) {
+    // hide all elements with class tab_content by default
+    var i , tabContent, tabLinks;
+    tabContent = document.getElementsByClassName("tab_contentP");
+    for(i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
     }
 
-    tabLinksP = document.getElementsByClassName('tab_linksP');
-    for(j=0; j < tabLinksP.length; j++) {
-        tabLinksP[j].className = tabLinksP[j].className.replace("active", "");
+    // remove the background-color of all tab_links button
+    tabLinks = document.getElementsByClassName("tab_linkP");
+    for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].style.backgroundColor = "";
     }
-    
 
-    document.getElementById(infoP).style.display = "block";
-    eve.currentTarget.className +=" active"
+    // show the specific content
+    document.getElementById(pageName).style.display = "block";
+
+    // add the specific color to the button used to open the tab content
+    element.style.backgroundColor = color;
 }
 
+document.getElementById("openDefaultO").click();
+document.getElementById("openDefaultP").click();
 
-// def open
-
-document.getElementById('defaultOpen').click();
-document.getElementById('defaultOpenP').click();
