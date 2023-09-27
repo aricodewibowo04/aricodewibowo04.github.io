@@ -129,6 +129,38 @@
         <!-- ============== Gallery = ==================  -->
         <div id="gallery" class="line_gallery"></div>
         <section  class="gallery">
+            <div class="slideshow_container">
+                <div class="slides">
+                    <q>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non veniam inventore quod reiciendis ab atque sapiente aliquid sint pariatur magnam!</q>
+                    <p class="author">- John Newman</p>
+                </div>
+                <div class="slides">
+                    <q>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non veniam inventore quod reiciendis ab atque sapiente aliquid sint pariatur magnam!</q>
+                    <p class="author">- Ben</p>
+                </div>
+                <div class="slides">
+                    <q>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non veniam inventore quod reiciendis ab atque sapiente aliquid sint pariatur magnam!</q>
+                    <p class="author">- Morgan</p>
+                </div>
+                <div class="slides">
+                    <q>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non veniam inventore quod reiciendis ab atque sapiente aliquid sint pariatur magnam!</q>
+                    <p class="author">- Smith</p>
+                </div>
+
+                <!-- button -->
+                <a class="prev" onclick="plushSlides(-1)">
+                    <i class="fa fa-left-arrow"></i>
+                </a>
+                <a class="next" onclick="plushSlides(1)">
+                    <i class="fa fa-right-arrow"></i>
+                </a>
+            </div>
+            <div class="dot_container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
             <h2>Gallery</h2>
             <div class="gallery_container">
                 <div class="box">
@@ -149,6 +181,8 @@
                 </div>
                 
             </div>
+
+            
         </section>
         <!-- =================contact =================-->
         <section id="contact" class="contact">

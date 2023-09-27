@@ -105,13 +105,14 @@ body {
 
 
 .desc_content {
+    animation: fadeEffect 1s;
     padding: 5px 5px;
     border-radius: 0 0 10px 10px;
 
 }
 
 .desc_content .desc{
-    animation: fadeEffect 1s;
+    
     background-color: #fafafa;
     padding: 10px;
     border-radius: 10px;
